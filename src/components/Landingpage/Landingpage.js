@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-export default function Landingpage() {
+export default function LandingPage() {
     return(
-        <div>Hello World</div>
+        <div>Landingpage</div>
     )
 }

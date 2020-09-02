@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
-import Landingpage from './components/Landingpage/Landingpage'
+import AppContainer from './components/AppContainer/AppContainer'
 import './App.scss';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route exact path='/' component={Landingpage}/>
+          <Route path='/' component={AppContainer}/>
         </Switch>
       </Router>
     </div>
