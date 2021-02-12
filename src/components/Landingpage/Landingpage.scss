@@ -1,0 +1,14 @@
+@import "../../_global";
+
+.landingpage {
+  &-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    color: $white;
+    background-color: $black;
+  }
+}

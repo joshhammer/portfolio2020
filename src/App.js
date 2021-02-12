@@ -1,6 +1,7 @@
 import React from 'react';
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
-import AppContainer from './components/AppContainer/AppContainer'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// import Navigation from './components//Navigation/Navigation';
+import LandingPage from './components//LandingPage/LandingPage';
 import './App.scss';
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route path='/' component={AppContainer}/>
+          <Route exact path='/' component={LandingPage}/>
+          {/* <Route path='/navigation' component={Navigation}/> */}
         </Switch>
       </Router>
     </div>

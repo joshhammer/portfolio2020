@@ -1,0 +1,38 @@
+@import "../../_global";
+
+.main-title {
+  &-name {
+    color: $white;
+    font-size: 8rem;
+    text-shadow: 2px 3px 5px $white;
+  }
+
+  &-position {
+    font-size: 4rem;
+    text-align: justify;
+  }
+
+  &-subtitle {
+    font-size: 8rem;
+  }
+}
+
+.color-change {
+  animation: changeColors 4s linear 0s infinite alternate, changeShadow 4s linear 0s infinite alternate;
+}
+
+@keyframes changeColors {
+  0% {color: yellow;}
+  25% {color: orange;}
+  50% {color: red;}
+  75% {color: purple;}
+  100% {color: blue;}
+}
+
+@keyframes changeShadow {
+  0% {text-shadow: 0 0 15px yellow;}
+  25% {text-shadow: 0 0 15px orange;}
+  50% {text-shadow: 0 0 15px red;}
+  75% {text-shadow: 0 0 15px purple;}
+  100% {text-shadow: 0 0 15px blue;}
+}
