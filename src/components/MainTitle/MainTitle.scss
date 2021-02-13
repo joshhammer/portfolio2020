@@ -1,24 +1,29 @@
-@import "../../_global";
 
 .main-title {
   &-name {
-    color: $white;
+    color: var(--primary-color);
     font-size: 8rem;
-    text-shadow: 2px 3px 5px $white;
+    text-shadow: 2px 3px 5px var(--primary-color);
+    font-weight: 300;
+    @media only screen and (max-width: 1200px) {
+      border: 1px solid red;
+    }
   }
 
   &-position {
     font-size: 4rem;
     text-align: justify;
+    font-weight: 100;
   }
 
   &-subtitle {
     font-size: 8rem;
+    font-weight: 300;
   }
 }
 
 .color-change {
-  animation: changeColors 4s linear 0s infinite alternate, changeShadow 4s linear 0s infinite alternate;
+  animation: changeColors 8s linear 0s infinite alternate, changeShadow 8s linear 0s infinite alternate;
 }
 
 @keyframes changeColors {
@@ -30,9 +35,9 @@
 }
 
 @keyframes changeShadow {
-  0% {text-shadow: 0 0 15px yellow;}
-  25% {text-shadow: 0 0 15px orange;}
-  50% {text-shadow: 0 0 15px red;}
-  75% {text-shadow: 0 0 15px purple;}
-  100% {text-shadow: 0 0 15px blue;}
+  0% {text-shadow: 0 0 7px yellow;}
+  25% {text-shadow: 0 0 7px orange;}
+  50% {text-shadow: 0 0 7px red;}
+  75% {text-shadow: 0 0 7px purple;}
+  100% {text-shadow: 0 0 7px blue;}
 }

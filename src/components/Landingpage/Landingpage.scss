@@ -1,4 +1,3 @@
-@import "../../_global";
 
 .landingpage {
   &-container {
@@ -8,7 +7,7 @@
     align-items: center;
     height: 100vh;
     width: 100vw;
-    color: $white;
-    background-color: $black;
+    color: var(--white);
+    background-color: var(--black);
   }
 }
