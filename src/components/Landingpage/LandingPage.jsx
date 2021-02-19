@@ -7,7 +7,7 @@ import MainTitle from '../MainTitle/MainTitle';
 export default function LandingPage() {
 
     return(
-        <main className="landingpage-container">
+        <main className="landingpage-container container">
             <MainTitle />
         </main>
     )
