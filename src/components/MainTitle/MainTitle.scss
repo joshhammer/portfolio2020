@@ -1,9 +1,9 @@
 
 .main-title {
   &-name {
-    color: var(--primary-color);
+    color: var(--menu-color);
     font-size: 8rem;
-    text-shadow: 2px 3px 5px var(--primary-color);
+    // text-shadow: 2px 3px 5px var(--menu-color);
     font-weight: 300;
     @media only screen and (max-width: 1200px) {
       border: 1px solid red;
@@ -14,16 +14,18 @@
     font-size: 4rem;
     text-align: justify;
     font-weight: 100;
+    color: var(--white);
   }
 
   &-subtitle {
+    color: var(--menu-color);
     font-size: 8rem;
     font-weight: 300;
   }
 }
 
 .color-change {
-  animation: changeColors 8s linear 0s infinite alternate, changeShadow 8s linear 0s infinite alternate;
+  // animation: changeColors 8s linear 0s infinite alternate, changeShadow 8s linear 0s infinite alternate;
 }
 
 @keyframes changeColors {
