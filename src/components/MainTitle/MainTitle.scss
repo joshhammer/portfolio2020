@@ -1,9 +1,9 @@
 
 .main-title {
   &-name {
-    color: var(--menu-color);
+    color: var(--accent-color-3);
     font-size: 8rem;
-    // text-shadow: 2px 3px 5px var(--menu-color);
+    // text-shadow: 2px 3px 5px var(--accent-color-3);
     font-weight: 300;
     @media only screen and (max-width: 1200px) {
       border: 1px solid red;
@@ -14,11 +14,11 @@
     font-size: 4rem;
     text-align: justify;
     font-weight: 100;
-    color: var(--white);
+    color: var(--accent-color-5);
   }
 
   &-subtitle {
-    color: var(--menu-color);
+    color: var(--accent-color-3);
     font-size: 8rem;
     font-weight: 300;
   }

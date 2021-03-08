@@ -25,6 +25,7 @@
     background-color: var(--menu-color);
     transition: right .5s cubic-bezier(0,-0.01,0,.99);
     &.visible {
+      box-shadow: -3px 0 15px rgba(black, .8);
       right: 0;
     }
     nav {
@@ -118,6 +119,7 @@
 
   &-item {
     text-align: center;
+    // border: 1px solid yellow;
   }
   
   &-link {
@@ -126,8 +128,10 @@
     font-size: 2rem;
     color: var(--black);
     text-transform: uppercase;
-    transition: background-color .5s cubic-bezier(0,-0.01,0,.99), color .5s cubic-bezier(0,-0.01,0,.99);
+    transition: background-color .5s cubic-bezier(0,-0.01,0,.99), color .5s cubic-bezier(0,-0.01,0,.99), box-shadow .25s cubic-bezier(0,-0.01,0,.99);
+    // box-shadow: 0px 0px 0px rgba(black, 1);
     &:hover {
+      // box-shadow: 0px 0px 10px rgba(black, 1);
       background-color: var(--black);
       color: var(--menu-color);
     }

@@ -1,6 +1,5 @@
 import React from 'react';
 import './LandingPage.scss';
-// import { useState, useEffect } from 'react';
 
 import MainTitle from '../MainTitle/MainTitle';
 

@@ -15,9 +15,9 @@
   }
   &-single-element {
     font-weight: 100;
-    color: var(--white);
+    color: var(--black);
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     width: 1000px;
     margin-bottom: 2rem;
     padding: 5px 10px;
@@ -29,5 +29,8 @@
     // &:hover {
     //   background-size: 70% 100%;
     // }
+  }
+  &-jquery {
+    text-transform: none;
   }
 }
