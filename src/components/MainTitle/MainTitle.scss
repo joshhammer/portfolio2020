@@ -1,0 +1,45 @@
+
+.main-title {
+  &-name {
+    color: var(--accent-color-3);
+    font-size: 8rem;
+    // text-shadow: 2px 3px 5px var(--accent-color-3);
+    font-weight: 300;
+    @media only screen and (max-width: 1200px) {
+      border: 1px solid red;
+    }
+  }
+
+  &-position {
+    font-size: 4rem;
+    text-align: justify;
+    font-weight: 100;
+    color: var(--accent-color-5);
+  }
+
+  &-subtitle {
+    color: var(--accent-color-3);
+    font-size: 8rem;
+    font-weight: 300;
+  }
+}
+
+.color-change {
+  // animation: changeColors 8s linear 0s infinite alternate, changeShadow 8s linear 0s infinite alternate;
+}
+
+@keyframes changeColors {
+  0% {color: yellow;}
+  25% {color: orange;}
+  50% {color: red;}
+  75% {color: purple;}
+  100% {color: blue;}
+}
+
+@keyframes changeShadow {
+  0% {text-shadow: 0 0 7px yellow;}
+  25% {text-shadow: 0 0 7px orange;}
+  50% {text-shadow: 0 0 7px red;}
+  75% {text-shadow: 0 0 7px purple;}
+  100% {text-shadow: 0 0 7px blue;}
+}

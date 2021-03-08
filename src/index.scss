@@ -1,1 +1,55 @@
+// Variables
+:root {
+  //colors
+// --black: rgb(17, 17, 17);
+// --white: rgb(255, 249, 223);
+// --menu-color: yellow;
 
+--black: #1A1A1D;
+--white: #FEFFFF;
+// --menu-color: #14A098;
+--menu-color: #CCCCCC;
+--accent-color-1: #CB2D6F;
+--accent-color-2: #501F3A;
+--accent-color-3: #CCCCCC;
+--accent-color-4: #0F292F;
+--accent-color-5: #14A098;
+
+//fonts
+--main-font: 'Barlow', sans-serif;
+}
+
+#root {
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--main-font);
+  font-weight: 300;
+}
+
+li {
+  font-family: var(--main-font);
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--main-font);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.container {
+  padding: 100px;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: var(--black);
+}

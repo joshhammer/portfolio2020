@@ -1,0 +1,36 @@
+.skills {
+  &-container {
+
+  }
+  &-title {
+    color: var(--menu-color);
+    font-size: 4rem;
+    font-weight: 100;
+  }
+  &-group-container {
+    margin-top: 4rem;
+  }
+  &-list {
+    list-style-type: none;
+  }
+  &-single-element {
+    font-weight: 100;
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    width: 1000px;
+    margin-bottom: 2rem;
+    padding: 5px 10px;
+    border: 1px solid var(--menu-color);
+    background-image: linear-gradient(var(--menu-color), var(--menu-color));
+    background-size: 10% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 1.5s cubic-bezier(.51,0,0,.99);
+    // &:hover {
+    //   background-size: 70% 100%;
+    // }
+  }
+  &-jquery {
+    text-transform: none;
+  }
+}
