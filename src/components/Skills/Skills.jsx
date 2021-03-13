@@ -36,7 +36,7 @@ export default function Skills() {
 
   return(
     <main className="skills-container container">
-      <h1 className="skills-title">SKILLS</h1>
+      <h1 className="skills-title section-title">Skills</h1>
       <div className="skills-group-container">
         <ul className="skills-list">
           <li className="skills-single-element skills-html" style={htmlStyle}>HTML</li>

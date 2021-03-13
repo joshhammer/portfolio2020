@@ -1,0 +1,44 @@
+.interest {
+  &-tag {
+    margin: 0 1rem 1rem 0;
+    border: 1px solid var(--accent-color-5);
+    background-image: linear-gradient(var(--accent-color-5), var(--accent-color-5));
+    background-repeat: no-repeat;
+    background-size: 100% 0;
+    background-position: center;
+    transition: background-size .25s ease-out;
+    &:hover {
+      cursor: default;
+      background-size: 100% 100%;
+      .interest-title {
+        color: var(--black);
+      }
+    }
+    &:nth-child(2n) {
+      border: 1px solid var(--accent-color-1);
+      background-image: linear-gradient(var(--accent-color-1), var(--accent-color-1));
+      background-repeat: no-repeat;
+      background-size: 100% 0;
+      background-position: center;
+      transition: background-size .25s ease-out;
+      &:hover {
+        cursor: default;
+        background-size: 100% 100%;
+        .interest-title {
+          color: var(--black);
+        }
+      }
+    }
+  }
+
+  &-title {
+    padding: 5px 10px;
+    color: var(--accent-color-3);
+    font-weight: 300;
+    font-size: 22px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    transition: color .25s ease-out;
+  }
+}
