@@ -7,6 +7,7 @@
     background-size: 100% 0;
     background-position: center;
     transition: background-size .25s ease-out;
+    
     &:hover {
       cursor: default;
       background-size: 100% 100%;
@@ -32,12 +33,12 @@
   }
 
   &-title {
-    padding: 5px 10px;
+    display: block;
+    padding: 10px 15px;
     color: var(--accent-color-3);
     font-weight: 300;
     font-size: 22px;
     letter-spacing: 2px;
-    line-height: 1.5;
     text-transform: uppercase;
     transition: color .25s ease-out;
   }

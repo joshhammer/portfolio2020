@@ -31,7 +31,7 @@ export default function Skills() {
       setJqueryStyle({backgroundSize: `${data.skills.jQuery.skillLevel} 100%`});
       setPythonStyle({backgroundSize: `${data.skills.python.skillLevel} 100%`});
       setPhpStyle({backgroundSize: `${data.skills.php.skillLevel} 100%`});
-    }, 200);
+    }, 500);
   })
 
   return(
