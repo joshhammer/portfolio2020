@@ -1,5 +1,6 @@
 .interest {
   &-tag {
+    position: relative;
     margin: 0 1rem 1rem 0;
     border: 1px solid var(--accent-color-5);
     background-image: linear-gradient(var(--accent-color-5), var(--accent-color-5));
@@ -7,12 +8,13 @@
     background-size: 100% 0;
     background-position: center;
     transition: background-size .25s ease-out;
+    z-index: 10;
     
     &:hover {
       cursor: default;
       background-size: 100% 100%;
       .interest-title {
-        color: var(--black);
+        color: var(--menu-color);
       }
     }
     &:nth-child(2n) {
@@ -26,7 +28,7 @@
         cursor: default;
         background-size: 100% 100%;
         .interest-title {
-          color: var(--black);
+          color: var(--menu-color);
         }
       }
     }
@@ -43,3 +45,48 @@
     transition: color .25s ease-out;
   }
 }
+
+// ============= Image on Hover section =============
+
+.hoverme {
+  position: relative;
+  z-index: 10;
+
+  a {
+    position: relative;
+    opacity: 0.7;
+    display: inline-block;
+    font-size: 20px;
+    color: var(--white);
+    transition: 0.2s;
+    z-index: 10;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.hover-image-placeholder {
+  visibility: hidden;
+  opacity: 0;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  transform: translate(-50%, -50%) scale(0.7);
+  z-index: 1;
+  background-size: cover !important;
+  transition: opacity 0.1s, visibility 0.1s, transform 0.2s;
+  left: 0%;
+  top:  0%;
+
+  &.close {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+    z-index: 1;
+  }
+}
+
+

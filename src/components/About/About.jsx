@@ -12,8 +12,8 @@ export default function About() {
       <p className='about-paragraph'>{data.description}</p>
       <h2 className='section-subtitle'>Interests</h2>
       <div className='interests-container'>
-        {data.interests.map((item) => {
-          return <InterestTag interestObj={item} />
+        {data.interests.map((item, index) => {
+          return <InterestTag interestObj={item} key={index} />
         })}
       </div>
     </main>

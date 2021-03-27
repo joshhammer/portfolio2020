@@ -31,7 +31,6 @@ export default function Contact() {
           />
           <input type="email" name='email' placeholder='Email'/>
 
-          {/* <input type="textarea" placeholder='Drop me a line...' value={message} onChange={(event) => setMessage(event.target.value)}/> */}
           <textarea name="" id="" placeholder='Message goes here..'></textarea>
           <input type="submit" value='Send'/>
         </form>

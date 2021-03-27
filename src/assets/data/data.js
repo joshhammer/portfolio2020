@@ -36,7 +36,7 @@ const data = {
     },
   },
   interests: [
-    {title: 'Music', url: 'https://www.youtube.com/watch?v=lLdvpFIPReA'},
+    {title: 'Music', url: 'https://www.youtube.com/watch?v=lLdvpFIPReA', imageUrl: 'https://unsplash.com/photos/j2f_0f8C5XA'},
     {title: 'Synthesizers', url: 'https://www.youtube.com/watch?v=igbr0R_KEP8'},
     {title: 'Guitars', url: 'https://shop.fender.com/en-CH/electric-guitars/jazzmaster/?rl=en_US'},
     {title: 'Videogames', url: 'https://thelastofus.fandom.com/wiki/The_Last_of_Us'},
